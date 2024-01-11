@@ -14,6 +14,14 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(firstnativeapp) to access your camera."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -25,6 +33,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d8843874-c493-476e-ad11-f1f20ca69077"
+      }
+    },
+    "owner": "yamap"
   }
 }
